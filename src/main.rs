@@ -5,7 +5,7 @@ fn main() {
     let mut num_one = 0;
     let mut num_two = 1;
 
-    let mut end = String::new().parse().expect("Not a number!");
+    let mut end: String = String::new().parse().expect("Not a number!");
 
     io::stdin()
         .read_line(&mut end)
